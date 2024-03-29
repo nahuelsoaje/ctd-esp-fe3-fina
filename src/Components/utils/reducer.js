@@ -3,7 +3,7 @@ export const reducer = (state, action) => {
         case 'GET_LIST':
             return {...state, list: action.payload}
         case 'GET_RECIPE':
-            return {...state, recipeSelected: action.payload}
+            return {...state, selected: action.payload}
         case 'ADD_FAV':
             return {
                 ...state, 

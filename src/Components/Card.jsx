@@ -10,7 +10,8 @@ const Card = ({item}) => {
   }
 
   return (
-   <Link to={routes.detail + item.id} > <div className="card">
+    <div className="card">
+    <Link to={routes.detail + item.id} >  <img src="/public/images/doctor.jpg" alt="" className="card"/></Link>
       <h3>{item.name} </h3>
       <h3>{item.username} </h3>
       <h3>{item.id} </h3>
@@ -20,7 +21,7 @@ const Card = ({item}) => {
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         <button onClick={()=> dispatch({type:'ADD_FAV', payload:item})} className="favButton">Add fav</button>
-    </div></Link>
+    </div>
   );
 };
 
