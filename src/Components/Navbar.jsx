@@ -28,7 +28,7 @@ const Navbar = () => {
       
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
       <div className='dark'>
-      <button onClick={handleTheme}>Change theme</button>
+      <button onClick={handleTheme}>🌙</button>
       </div>
       
     </nav>
